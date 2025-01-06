@@ -7,7 +7,7 @@ Welcome to the Samsung Semiconductor RISC-V Workshop documentation! This worksho
 - **Hardware Platform**: VSDSquadron Mini RISC-V Development Board
 - **Core Focus**: Open-source RISC-V ISA, Toolchain Development, SoC Design
 - **Duration**: Intensive 6-Task Workshop
-- **Tools Used**: Open-source RISC-V GNU Toolchain, GCC Compiler, Spike Simulator
+- **Tools Used**: Open-source RISC-V GNU Toolchain, GCC Compiler
 
 ## Table of Contents
 - [Task 1: RISC-V ISA and GNU Toolchain](#task-1-risc-v-isa-and-gnu-toolchain)
@@ -65,4 +65,4 @@ Your contributions to improve this workshop documentation are welcome. Please fo
 - Workshop instructors and technical team
 
 ## License
-This project documentation is licensed under the MIT License - see the LICENSE file for details.
+This project documentation is licensed under the MIT License.
