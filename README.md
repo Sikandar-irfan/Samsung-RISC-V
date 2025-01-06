@@ -41,19 +41,19 @@ This task introduces the fundamental concepts of RISC-V Instruction Set Architec
 *Comprehensive analysis of program memory layout including text, data, and stack segments. The image reveals how the program is mapped to the VSDSquadron's memory architecture and shows section-wise memory allocation.*
 
 ## Task 2: Coming Soon
-*Advanced RISC-V concepts and implementations will be covered in the upcoming task*
+*Soon will be added*
 
 ## Task 3: Coming Soon
-*Future content will explore more complex RISC-V architectures*
+*Soon will be added*
 
 ## Task 4: Coming Soon
-*Advanced topics in RISC-V development will be covered*
+*Soon will be added*
 
 ## Task 5: Coming Soon
-*Specialized RISC-V implementations will be explored*
+*Soon will be added*
 
 ## Task 6: Coming Soon
-*Final task covering advanced RISC-V concepts*
+*Soon will be added*
 
 ## Contributing
 Your contributions to improve this workshop documentation are welcome. Please follow the standard GitHub pull request process.
