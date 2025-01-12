@@ -11,7 +11,7 @@ Welcome to the Samsung Semiconductor RISC-V Workshop documentation! This worksho
 
 ## Table of Contents
 - [Task 1: RISC-V ISA and GNU Toolchain](#task-1-risc-v-isa-and-gnu-toolchain)
-- [Task 2: Coming Soon](#task-2-coming-soon)
+- [Task 2: Samsung RISC-V Processor Architecture Analysis](#task-2-samsung-risc-v-processor-architecture-analysis)
 - [Task 3: Coming Soon](#task-3-coming-soon)
 - [Task 4: Coming Soon](#task-4-coming-soon)
 - [Task 5: Coming Soon](#task-5-coming-soon)
@@ -40,8 +40,41 @@ This task introduces the fundamental concepts of RISC-V Instruction Set Architec
 ![Memory Mapping Details](images/vsd4.png)
 *Comprehensive analysis of program memory layout including text, data, and stack segments. The image reveals how the program is mapped to the VSDSquadron's memory architecture and shows section-wise memory allocation.*
 
-## Task 2: Coming Soon
-*Soon will be added*
+## Task 2: Samsung RISC-V Processor Architecture Analysis
+
+### Overview
+This task presents a detailed analysis of Samsung's RISC-V processor architecture implementation through comprehensive Visual Studio Diagrams (VSD). These diagrams provide insights into the processor's organization, control flow, pipelining, and memory hierarchy.
+
+### Implementation Details
+
+#### 1. Basic Block Diagram
+![Basic Architecture Overview](images/task2_vsd1.png)
+*High-level architectural diagram of Samsung's RISC-V implementation showing the core components including instruction fetch unit, decode unit, execution unit, and memory interfaces. This fundamental structure forms the backbone of the processor design.*
+
+#### 2. Control Flow Architecture
+![Control Flow Diagram](images/task2_vsd2.png)
+*Detailed representation of the control flow mechanisms and signal pathways within the processor. The diagram illustrates how different units communicate and coordinate to execute instructions efficiently.*
+
+#### 3. Pipeline Implementation
+![Pipeline Architecture](images/task2_vsd3.png)
+*Visualization of the pipelined execution model showing how instructions flow through different processing stages. This design enables parallel processing of multiple instructions, improving throughput and performance.*
+
+#### 4. Memory System Organization
+![Memory Hierarchy](images/task2_vsd4.png)
+*Comprehensive view of the memory hierarchy and cache organization. The diagram details the multi-level cache structure and memory management system that optimizes data access and storage.*
+
+### Key Features
+- Advanced 5-stage pipeline architecture
+- Harvard memory architecture implementation
+- Sophisticated branch prediction mechanism
+- Efficient instruction decode and execution units
+- Optimized memory hierarchy with multi-level cache
+
+### Technical Achievements
+- Implementation of RISC-V standard ISA
+- Performance-optimized processor design
+- Efficient resource utilization
+- Balanced pipeline stages for optimal throughput
 
 ## Task 3: Coming Soon
 *Soon will be added*
