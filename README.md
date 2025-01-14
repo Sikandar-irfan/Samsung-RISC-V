@@ -12,7 +12,7 @@ Welcome to the Samsung Semiconductor RISC-V Workshop documentation! This worksho
 ## Table of Contents
 - [Task 1: RISC-V ISA and GNU Toolchain](#task-1-risc-v-isa-and-gnu-toolchain)
 - [Task 2: Samsung RISC-V Processor Architecture Analysis](#task-2-samsung-risc-v-processor-architecture-analysis)
-- [Task 3: Coming Soon](#task-3-coming-soon)
+- [Task 3: RISC-V Instruction Analysis](#task-3-risc-v-instruction-analysis)
 - [Task 4: Coming Soon](#task-4-coming-soon)
 - [Task 5: Coming Soon](#task-5-coming-soon)
 - [Task 6: Coming Soon](#task-6-coming-soon)
@@ -76,8 +76,103 @@ This task presents a detailed analysis of Samsung's RISC-V processor architectur
 - Efficient resource utilization
 - Balanced pipeline stages for optimal throughput
 
-## Task 3: Coming Soon
-*Soon will be added*
+## Task 3: RISC-V Instruction Analysis
+
+## Overview
+
+In this task, we analyze RISC-V instructions from a factorial calculation program. The analysis includes:
+- Instruction type identification (R, I, S, B, U, J)
+- 32-bit binary pattern analysis
+- Field breakdown for each instruction
+- Verification against RISC-V specification
+
+## Program Analysis Screenshots
+
+### 1. Initial Program Analysis
+![Task 3 Screenshot 1](/images/task3_vsd1.png)
+*Figure 1: Initial program compilation and analysis*
+
+### 2. Instruction Encoding
+![Task 3 Screenshot 2](/images/task3_vsd2.png)
+*Figure 2: Instruction encoding examination*
+
+### 3. Binary Pattern Analysis
+![Task 3 Screenshot 3](/images/task3_vsd3.png)
+*Figure 3: Binary pattern breakdown*
+
+### 4. Register Usage
+![Task 3 Screenshot 4](/images/task3_vsd4.png)
+*Figure 4: Register allocation and usage*
+
+### 5. Memory Operations
+![Task 3 Screenshot 5](/images/task3_vsd5.png)
+*Figure 5: Memory access patterns*
+
+### 6. Control Flow
+![Task 3 Screenshot 6](/images/task3_vsd6.png)
+*Figure 6: Branch and jump instructions*
+
+### 7. Stack Management
+![Task 3 Screenshot 7](/images/task3_vsd7.png)
+*Figure 7: Stack pointer and frame management*
+
+### 8. Program Execution
+![Task 3 Screenshot 8](/images/task3_vsd8.png)
+*Figure 8: Final program execution*
+
+## Instruction Analysis
+
+### Key Instructions Analyzed:
+
+1. Stack and Frame Management:
+   - ADDI sp,sp,-64 (0x7139)
+   - SD s0,56(sp) (0xfc22)
+
+2. Register Operations:
+   - MV a5,a0 (0x87aa)
+   - LW a5,0(a5) (0x439c)
+
+3. Arithmetic Operations:
+   - MULW a5,a4,a5 (0x02f707bb)
+   - DIVW a5,a4,a5 (0x02f747bb)
+
+4. Control Flow:
+   - BLT a5,a4,1e (0xfae7c0e3)
+   - BGEZ a5,1e2 (0x00079463)
+   - JAL ra,multiply (0x000080e7)
+   - RET (0x8082)
+
+## Verification Results
+
+All analyzed instructions conform to the RISC-V specification (RV64I base with extensions):
+
+1. Architecture: RV64I with M, A, F, D, C extensions
+2. Proper instruction encoding verified
+3. Correct field alignments confirmed
+4. Register conventions followed
+5. Appropriate immediate value handling
+
+## Key Findings
+
+1. Instruction Types Used:
+   - R-type: ADD, SUB, MUL, DIV
+   - I-type: ADDI, LW, JALR
+   - S-type: SD, SW
+   - B-type: BLT, BGEZ
+   - J-type: JAL
+
+2. Register Usage:
+   - x2 (sp): Stack pointer
+   - x1 (ra): Return address
+   - x8 (s0/fp): Frame pointer
+   - x10-x17 (a0-a7): Arguments
+   - x5-x7, x28-x31 (t0-t6): Temporaries
+
+3. Compliance:
+   RISC-V specification adherence
+   Proper calling conventions
+   Correct immediate encoding
+   Instruction alignment
 
 ## Task 4: Coming Soon
 *Soon will be added*
