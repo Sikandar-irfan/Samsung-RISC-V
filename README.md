@@ -92,33 +92,25 @@ In this task, we analyze RISC-V instructions from a factorial calculation progra
 ![Task 3 Screenshot 1](/images/task3_vsd1.png)
 *Figure 1: Initial program compilation and analysis*
 
-### 2. Instruction Encoding
-![Task 3 Screenshot 2](/images/task3_vsd2.png)
-*Figure 2: Instruction encoding examination*
-
-### 3. Binary Pattern Analysis
-![Task 3 Screenshot 3](/images/task3_vsd3.png)
-*Figure 3: Binary pattern breakdown*
-
-### 4. Register Usage
+### 2. Register Usage
 ![Task 3 Screenshot 4](/images/task3_vsd4.png)
-*Figure 4: Register allocation and usage*
+*Figure 2: Register allocation and usage*
 
-### 5. Memory Operations
+### 3. Memory Operations
 ![Task 3 Screenshot 5](/images/task3_vsd5.png)
-*Figure 5: Memory access patterns*
+*Figure 3: Memory access patterns*
 
-### 6. Control Flow
+### 4. Control Flow
 ![Task 3 Screenshot 6](/images/task3_vsd6.png)
-*Figure 6: Branch and jump instructions*
+*Figure 4: Branch and jump instructions*
 
-### 7. Stack Management
+### 5. Stack Management
 ![Task 3 Screenshot 7](/images/task3_vsd7.png)
-*Figure 7: Stack pointer and frame management*
+*Figure 5: Stack pointer and frame management*
 
-### 8. Program Execution
+### 6. Program Execution
 ![Task 3 Screenshot 8](/images/task3_vsd8.png)
-*Figure 8: Final program execution*
+*Figure 6: Final program execution*
 
 ## Instruction Analysis
 
